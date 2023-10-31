@@ -18,7 +18,7 @@ function redirecionarAteNaoExpirar() {
         }
         
         var intervalo = setInterval(function () {
-            fetch("URL_DE_VERIFICACAO_AQUI")
+            fetch(novaUrl)
                 .then(function (response) {
                     return response.text();
                 })
